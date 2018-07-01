@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 public class GUItienda extends JPanel{
     public JButton boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9, boton10;
     public ImageIcon imagen1,imagen2,imagen3, imagen4,imagen5,imagen6, imagen7,imagen8,imagen9, imagen10, img1;
-    public JLabel fondo,info1, info2, info3, info4, info5, info6, info7, info8, info9, info10;
+    public JLabel fondo;
     
     public  GUItienda(){
        imagen2 = new ImageIcon(getClass().getResource("7F4.jpg"));
@@ -39,10 +39,7 @@ public class GUItienda extends JPanel{
        boton1.setIcon(imagen1);
        boton1.setBounds(20, 20,90, 90);
        
-       info1 = new JLabel("info1");
-       img1 =new ImageIcon(getClass().getResource("info1.JPG"));
-       info1.setIcon(img1);
-      info1.setBounds(20,120, 220, 220);
+      
        
        imagen2 = new ImageIcon(getClass().getResource("botas.jpg"));
        boton2 = new JButton("boton2");
@@ -96,7 +93,6 @@ public class GUItienda extends JPanel{
        
        
        add(boton1);
-       add(info1);
        add(boton2);
        add(boton3);
        add(boton4);
