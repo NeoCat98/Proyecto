@@ -15,9 +15,11 @@ public class Jugador {
     private String nombre = "Mir";
     private int vidaTotal = 20,magiaTotal = 20,magiaActual = 20,vidaActual = 20;
     private int ataque = 50;
-    private ArrayList <Objetos> items;
+    private ArrayList <Objetos> items = new ArrayList<>();
     private ArrayList <Magia> magia;
-
+   
+   
+    
     public String getNombre() {
         return nombre;
     }
@@ -84,5 +86,11 @@ public class Jugador {
     
     public Jugador(){
         
+    }
+    
+    public void AgregarObjeto(Objetos obj){
+        System.out.println(obj.getAtributo());
+        System.out.println(obj.getNombre());
+        items.add(obj);
     }
 }

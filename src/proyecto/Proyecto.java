@@ -6,6 +6,7 @@
 package proyecto;
 
 import GUI.VentanaBatalla;
+import GUItienda.GUItienda;
 
 import Jugador.Jugador;
 import javax.swing.JFrame;
@@ -20,11 +21,19 @@ public class Proyecto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Jugador m = new Jugador();
-        VentanaBatalla ventana = new VentanaBatalla(m);
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setSize(900,900);
-        ventana.setVisible(true);
+        //Jugador m = new Jugador();
+        //VentanaBatalla ventana = new VentanaBatalla(m);
+        //ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //ventana.setSize(900,900);
+        //ventana.setVisible(true);
+        
+        
+        JFrame ventana1 =  new JFrame("ventana");
+        ventana1.setContentPane(new GUItienda());
+        ventana1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana1.setResizable(false);
+        ventana1.pack();
+        ventana1.setVisible(true);
     }
     
     public void VentanaVisible(VentanaBatalla m){
